@@ -1,0 +1,234 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    background-color: #b496fa;
+}
+
+.encabezadoInicio{
+    position: relative;
+    top: 0px;
+    background:#2e3192;
+    width:100%;
+    height: 100px;
+}
+
+.encabezados{
+    display: inline-block;
+    color: #fff;;
+    font-weight: bold; 
+    line-height: 100px;
+    font-family:'Press Start 2P', cursive;
+    position: relative;
+    left: 39%;
+}
+
+.bombaEnc1{
+    display: inline-block;
+    width: 5%;
+    height: 80%;
+    position:absolute;
+    top: 0px;
+    right: 32%;
+}
+
+.bombaEnc2{
+    display: inline-block;
+    width: 5%;
+    height: 80%;
+    position:absolute;
+    top: 0px;
+    left: 32%;
+}
+
+
+.inicioButton {
+    overflow: hidden;
+    background-color: #b496fa;
+    width: 150px;
+	height: 50px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 75%;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+}
+
+.nombreButton {
+    overflow: hidden;
+    background-color: #b496fa;
+    width: 175px;
+	height: 50px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 81%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.modoButton {
+    overflow: hidden;
+    background-color: #b496fa;
+    width: 200px;
+	height: 50px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 81%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.personajeButtonBlanco{
+    border: none;
+    position: absolute;
+    width: 224px;
+    height: 224px;
+    background-color: #2e3192;
+    top: 16%;
+    left: 30%;
+}
+
+.personajeButtonBlanco:hover{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.personajeButtonBlanco:focus {
+    border: 3px solid white;
+    border-radius: 5px; 
+}
+
+.personajeButtonNegro{
+    border: none;
+    position: absolute;
+    width: 224px;
+    height: 224px;
+    background-color: #2e3192;
+    top: 16%;
+    right: 30%;
+    transition: border 0.2s;
+}
+
+.personajeButtonNegro:hover{
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.personajeButtonNegro:focus {
+    border: 3px solid white;
+    border-radius: 5px; 
+}
+
+.botonIniciar{
+    overflow: hidden;
+    background-color: #b496fa;
+    width: 200px;
+	height: 70px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    top: 75%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.divInicial{
+    margin: 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+	height: 675px;
+    background-color:#2e3192;
+}
+
+.divPersonaje{
+    position: absolute;
+    margin: 5% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+	height: 40%;
+    background-color:#2e3192;
+}
+
+.divPartida{
+    margin: 0.9% auto;
+    display: flex;
+    justify-content: center;
+    width: 1344px;
+	height: 832px;
+    background-color:#2e3192;
+}
+
+
+.h1Nombre{
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 25px;
+}
+
+.h1Codigo{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    position: absolute;
+    top: 30%;
+    padding: 1.5%;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.inputTextos{
+    position: absolute;
+    width: 300px;
+    height: 42px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: black;
+}
+
+.inputCodigo{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: black;
+}
+
+.textos{
+    text-align: center;
+    position: absolute;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 17px;
+    top: 30%;
+}
+
+.canvasPartida{
+    margin: 0.9% auto;
+    display: flex;
+    justify-content: center;
+    background-color:forestgreen;
+}
+
+
+

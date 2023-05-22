@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>BombermanARSW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="CSS/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <script src="JS/app.js"></script>
+        <!--
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+        <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+        <script src="/app.js"></script>
+        -->
+    </head>
+    <body>
+        <header class="encabezadoInicio">
+            <div>
+                <img class="bombaEnc1" src="img/Bomb1.webp">
+                <img class="bombaEnc2" src="img/Bomb2.webp">
+            </div>
+            <h1 class="encabezados">BombermanARSW</h1>
+        </header>
+        <div class = "divInicial" style="background-color: #2e3192;">
+            <h1 class = "h1Nombre" style="top: 26%;"><span id="nombreJugador2"></span>, tu código de sala es:</h1>
+            <h1 class = "h1Codigo" id="codigo"></h1>
+            <img id= "imagen" src="" style="position: absolute; top: 45%; padding-left: 5px;">
+            <button class = "botonIniciar" onclick="redirigirAPartida() ">Iniciar Juego</button>
+
+            <script>
+                var nombre = localStorage.getItem("valorInput");
+                var imagenPersonaje = localStorage.getItem("imagenPersonaje");
+
+                document.getElementById("nombreJugador2").innerHTML = nombre;
+                document.getElementById("imagen").setAttribute("src", imagenPersonaje)
+            </script> 
+        </div>
+    </body>
+</html>

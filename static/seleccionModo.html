@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>BombermanARSW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"  href="CSS/app.css">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <script src="JS/app.js"></script>
+        <!--2e319 Hola 
+        <script src="/webjars/jquery/jquery.min.js"></script>
+        <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+        <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+        <script src="/app.js"></script>
+        -->
+    </head>
+    <body>
+        <header class="encabezadoInicio">
+            <div>
+                <img class="bombaEnc1" src="img/Bomb1.webp">
+                <img class="bombaEnc2" src="img/Bomb2.webp">
+            </div>
+            <h1 class="encabezados">BombermanARSW</h1>
+        </header>
+        <div class = "divInicial">
+            <h1 class = "h1Nombre" style="top: 24%;">Hola, <span id="nombreJugador"></span>!</h1>
+                <p class= "textos"> Selecciona tu personaje </p>
+                <div class="divPersonaje">
+                    <button class ="personajeButtonBlanco" onclick="guardarImg('img/Down/blancoDownGIF.gif')" style="background-image: url(img/down/blancoDownGIF.gif);"></button>
+                    <button class ="personajeButtonNegro" onclick="guardarImg('img/Down/negroDownGIF.gif')" style="background-image: url(img/down/negroDownGIF.gif);"></button>
+                </div>
+            <script>
+                var valor = localStorage.getItem("valorInput");
+                document.getElementById("nombreJugador").innerHTML = valor;
+            </script> 
+            <button class ="modoButton" onclick="redirigirACrear()" style="top: 75%;">Crear una Sala</button>
+            <button class ="modoButton" onclick="redirigirAUnirse()" style="top: 81%;">Unirse a sala</button>
+        </div>
+    </body>
+</html>
